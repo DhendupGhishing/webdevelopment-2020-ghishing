@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Timetable page</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="tt.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<style>
+		table{
+			border-collapse: collapse;
+			border: 3px solid black;
+			border-style: double;
+			padding: 25px;
+			height: 60px;
+		}
+		table,th{
+			font-family: 'fugaz One', black;
+		}
+		table,th,td{
+			border:2px solid black;
+			font-size: 14px;
+		}
+	</style>
+</head>
+ <header class="header_area">
+        <div class="main-menu">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="index.html"><img src="./static/logo.png" alt="logo">Ghishing</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="mr-auto"></div>
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#cv">CV</a>
+                        </li>
+                     
+                        <li class="nav-item">
+                            <a class="nav-link" href="#bf">Bio Data</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#bf">Foot Print</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#ev">Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#su">Subscribe</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Services
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item" href="#ser">Semester Result</a>
+                                <a class="dropdown-item" href="#ser">Class Time Table </a>
+                                <a class="dropdown-item" href="#ser">Check Your BMI </a>
+                              </div>
+                          </li>
+
+                           <li class="nav-item">
+                            <a class="nav-link" href="logout.php">Logout</a>
+                        </li>
+                            </div>
+                        </div>
+
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+        <!--End--><br><br>
+	
+	<table border="1" align="center">
+		<tr>
+			<td colspan="10" align="center"; style="font-family:'Times New Roman', Times, serif ;font-size: 20px;background-color: paleturquoise;">Academic Time Table of BScIT  A </td>
+		</tr>
+		<th style="background-color: paleturquoise">Day</th><th style="background-color: paleturquoise">9-10</th><th style="background-color: paleturquoise">10-11</th><th rowspan="6" style="-webkit-transform: rotate(90deg)">BREAK</th><th style="background-color: paleturquoise">11:15-12:15</th><th style="background-color: paleturquoise">12:15-1:15</th><th rowspan="6" style=" -webkit-transform: rotate(90deg)">LUNCH</th><th style="background-color: paleturquoise">2:15-3:15</th><th style="background-color: paleturquoise">3:15-4:15</th><th style="background-color: paleturquoise">4:15-5:15</th>
+		<tr align="center">
+			<td>Monday</td>
+			<td colspan="2">Assembly</td>
+			<td colspan="2">ACS101 CR1</td>
+			<td colspan="3">ITS101(P)(RS)LAB2</td>
+		</tr>
+		<tr align="center">
+			<td>Tuesday</td>
+			<td colspan="2">ACS101 </td>
+			<td>ITF102(TP)</td>
+			<td>ITW101(ND)</td>
+			<td colspan="3">ITF102(P)(ST)LAB2</td>
+			
+		</tr>
+		<tr align="center">
+			<td>Wednesday</td>
+			<td>ITS101(RS)</td>
+			<td>ITW101(ND)</td>
+			<td>ITF102(TP)</td>
+			<td>ITW101(ND)</td>
+			<td colspan="3">ITW101(P)(TM)LAB2</td>
+		</tr>
+		<tr align="center">
+			<td>Thursday</td>
+			<td colspan="2">ACS101 CR1</td>
+			<td>ITW101(ND)</td>
+			<td>ITF102(TP)</td>
+			<td>ITS101(RS)</td>
+			<td colspan="2"></td>
+		</tr>
+		<tr align="center">
+			<td>Friday</td>
+			<td colspan="2">PRJ101(T)</td>
+			<td colspan="2">ITS101(RS)</td>
+			<td>ITF102(TP)</td>
+			<td colspan="2"></td>
+		</tr>
+	</table><br><br>
+
+	<!-- footer-->
+<footer class="footer">
+    <div class="container">
+        <div class="about-us" data-aos="fade-right" data-aos-delay="200">
+            <h2>About Me</h2>
+            <p>I am Dhendup Ghishing from Dagapela currently studying in Gyalpozhing college of Informatation and Techonology
+                And I am pursuing degree in BscIT.
+            </p>
+        </div>
+        <div class="newsletter" data-aos="fade-right" data-aos-delay="200">
+            <h2>Connect Me </h2>
+            
+            <div >
+                <p>Mail me through: 12190048.gcit@rub.edu.bt </p>
+                
+            </div>
+        </div>
+        <div class="instagram" data-aos="fade-left" data-aos-delay="200">
+            <h2>Sister Collage </h2>
+            <div class="flex-row">
+                <a href="https://www.rub.edu.bt/index.php/en/" style="text-decoration: none; color: black;"> Royal University of Bhutan</a>
+            </div>
+            <div class="flex-row">
+             <a href="https://www.gcit.edu.bt/"style="text-decoration: none; color: black;"> Gyalpozhing College</a>
+            </div>
+            <div class="flex-row">
+                <a href="https://www.cst.edu.bt/"style="text-decoration: none; color: black;"> College Of Science And Techonology</a>
+               </div>
+               <div class="flex-row">
+                <a href="http://www.gcbs.edu.bt/"style="text-decoration: none; color: black;">Gedu College of Business and Studies</a>
+               </div>
+               <div class="flex-row">
+                <a href="http://www.cnr.edu.bt/"style="text-decoration: none; color: black;">CNR</a>
+               </div>
+               <div class="flex-row">
+                <a href="https://www.jnec.edu.bt/en/"style="text-decoration: none; color: black;">JNEC</a>
+               </div>
+        </div>
+        <div class="follow" data-aos="fade-left" data-aos-delay="200">
+            <h2>Follow us</h2>
+            <p>Let us be Social</p>
+            <div>
+                <a href="https://www.facebook.com/" style="color: yellow;"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.facebook.com/"style="color: yellow;"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/"style="color: yellow;"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/"style="color: yellow;"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="move-up">
+        <span><i class="fas fa-arrow-circle-up fa-2x"></i></span>
+    </div>
+</footer>
+<!--The end-->
+        
+<script type="text/javascript">
+
+$(document).ready(function () {
+    // click to scroll top
+    $('.move-up span').click(function () {
+        $('html, body').animate({
+            scrollTop: 0
+        }, 1000);
+    })
+
+
+});
+
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,166 @@
+
+.header_area .main-menu .navbar .navbar-brand{
+    padding: 0 2rem 0 5rem;
+    font-family: 'Courgette', cursive;
+
+}
+.header_area .main-menu .navbar{
+    background-color: darkslategray;
+}
+
+.header_area .main-menu .nav-item .nav-link{
+    font-family:'Courgette', cursive;
+    font: normal 500 15px/2px ;
+    text-transform: uppercase;
+    padding: 1.7rem;
+    color: whitesmoke;
+}
+
+
+.header_area .main-menu .navbar-nav .active a{
+    background: whitesmoke;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.header_area .main-menu .navbar-nav a:hover{
+    background: rgba(255, 0, 0, 0.349);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+/* footer*/
+
+/* ----------------- Footer --------------------- */
+
+footer.footer{
+    height: 100%;
+    background: slategrey;
+    position: relative;
+}
+
+footer.footer .container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+footer.footer .container > div{
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 3rem .9rem;
+}
+
+footer.footer .container h2{
+    color: snow;
+}
+
+footer.footer .newsletter .form-element{
+    background: black;
+    display: inline-block;
+}
+
+footer.footer .newsletter .form-element input{
+    padding: .5rem .7rem;
+    border: none;
+    background: transparent;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    width: 74%;
+}
+
+footer.footer .newsletter .form-element span{
+    background: steelblue;
+    padding: .5rem .7rem;
+    cursor: pointer;
+}
+
+footer.footer .instagram div > img{
+    display: inline-block;
+    width: 25%;
+    height: 50%;
+    margin: .3rem .4rem;
+}
+
+footer.footer .follow div i{
+    color: ivory;
+    padding: 0 .4rem;
+}
+
+footer.footer .rights{
+    justify-content: center;
+    font-family:'Times New Roman', Times, serif;
+}
+
+footer.footer .rights h4 a{
+    color:wheat;
+}
+
+footer.footer .move-up{
+    position: absolute;
+    right: 6%;
+    top: 50%;
+}
+
+footer.footer .move-up span{
+    color: darkred;
+}
+
+footer.footer .move-up span:hover{
+    color: darkseagreen;
+    cursor: pointer;
+}
+/*Responsive sesion*/
+@media only screen and (max-width: 340px){
+    .header_area .main-menu .navbar,
+    .header_area .main-menu .navbar .navbar-brand
+    {
+        padding: 2%;
+        margin: 0%;
+    }
+ 
+    footer.footer .container > div{
+        padding:  1rem .9rem !important;
+    }
+
+    footer .rights{
+        padding: 0 1.4rem;
+        text-align: center;
+    }
+  
+
+}
+
+
+
+/* if the viewport is equal to 340px or less than that */ 
+@media only screen and (max-width: 792px){
+  
+    footer .footer .container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+ 
+
+  
+
+}
+
+/* if the viewport is equal to 1910px or less than that */ 
+@media only screen and (max-width: 910px){
+    .header_area .main-menu .navbar{
+        padding: 1rem;
+    }
+   
+    
+      footer .footer .container{
+          grid-template-columns: repeat(2, 1fr);
+      }
+    
+    
+   
+
+
+
+}
+/* Ends*/

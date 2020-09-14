@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bmi.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+</head>
+<body>
+    
+       <!--Nav-starts-->
+   <header class="header_area">
+        <div class="main-menu">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="index.html"><img src="./static/logo.png" alt="logo">Ghishing</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="mr-auto"></div>
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#cv">CV</a>
+                        </li>
+                     
+                        <li class="nav-item">
+                            <a class="nav-link" href="#bf">Bio Data</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#bf">Foot Print</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#ev">Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#su">Subscribe</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Services
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item" href="#ser">Semester Result</a>
+                                <a class="dropdown-item" href="#ser">Class Time Table </a>
+                                <a class="dropdown-item" href="#ser">Check Your BMI </a>
+                              </div>
+                          </li>
+
+                           <li class="nav-item">
+                            <a class="nav-link" href="logout.php">Logout</a>
+                        </li>
+                            </div>
+                        </div>
+
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+        <!--End-->
+
+    <center><form name="bmiForm" id="dha">
+        Your Weight(kg): <input type="text" name="weight" size="10"><br /><br>
+        Your Height(cm): <input type="text" name="height" size="10"><br /><br>
+        <input type="button" value="Calculate BMI" onClick="calculateBmi()"><br /><br>
+        Your BMI: <input type="text" name="bmi" size="10"><br /><br>
+        This Means: <input type="text" name="meaning" size="25"><br /><br>
+        <input type="reset" value="Clear" /><br>
+        </form>
+    </center>
+        <script language="JavaScript">
+            
+            function calculateBmi() {
+            var weight = document.bmiForm.weight.value
+            var height = document.bmiForm.height.value
+            if(weight > 0 && height > 0){	
+            var finalBmi = weight/(height/100*height/100)
+            document.bmiForm.bmi.value = finalBmi
+            if(finalBmi < 18.5){
+            document.bmiForm.meaning.value = "That you are too thin. Thank You For Using Our service"
+            }
+            if(finalBmi > 18.5 && finalBmi < 25){
+            document.bmiForm.meaning.value = "That you are healthy. Thank You fro using our service"
+            }
+            if(finalBmi > 25){
+            document.bmiForm.meaning.value = "That you have overweight. Thank You for using our service"
+            }
+            }
+            else{
+            alert("Please Fill in everything correctly")
+            }
+            }
+           
+            </script>
+
+            <!-- Footer-->
+            <!-- footer-->
+<footer class="footer">
+    <div class="container">
+        <div class="about-us" data-aos="fade-right" data-aos-delay="200">
+            <h2>About Me</h2>
+            <p>I am Dhendup Ghishing from Dagapela currently studying in Gyalpozhing college of Informatation and Techonology
+                And I am pursuing degree in BscIT.
+            </p>
+        </div>
+        <div class="newsletter" data-aos="fade-right" data-aos-delay="200">
+            <h2>Connect Me </h2>
+            
+            <div >
+                <p>Mail me through: 12190048.gcit@rub.edu.bt </p>
+                
+            </div>
+        </div>
+        <div class="instagram" data-aos="fade-left" data-aos-delay="200">
+            <h2>Sister Collage </h2>
+            <div class="flex-row">
+                <a href="https://www.rub.edu.bt/index.php/en/" style="text-decoration: none; color: black;"> Royal University of Bhutan</a>
+            </div>
+            <div class="flex-row">
+             <a href="https://www.gcit.edu.bt/"style="text-decoration: none; color: black;"> Gyalpozhing College</a>
+            </div>
+            <div class="flex-row">
+                <a href="https://www.cst.edu.bt/"style="text-decoration: none; color: black;"> College Of Science And Techonology</a>
+               </div>
+               <div class="flex-row">
+                <a href="http://www.gcbs.edu.bt/"style="text-decoration: none; color: black;">Gedu College of Business and Studies</a>
+               </div>
+               <div class="flex-row">
+                <a href="http://www.cnr.edu.bt/"style="text-decoration: none; color: black;">CNR</a>
+               </div>
+               <div class="flex-row">
+                <a href="https://www.jnec.edu.bt/en/"style="text-decoration: none; color: black;">JNEC</a>
+               </div>
+        </div>
+        <div class="follow" data-aos="fade-left" data-aos-delay="200">
+            <h2>Follow us</h2>
+            <p>Let us be Social</p>
+            <div>
+                <a href="https://www.facebook.com/" style="color: yellow;"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.facebook.com/"style="color: yellow;"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/"style="color: yellow;"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/"style="color: yellow;"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="move-up">
+        <span><i class="fas fa-arrow-circle-up fa-2x"></i></span>
+    </div>
+</footer>
+<!--The end-->
+        
+<script type="text/javascript">
+
+$(document).ready(function () {
+    // click to scroll top
+    $('.move-up span').click(function () {
+        $('html, body').animate({
+            scrollTop: 0
+        }, 1000);
+    })
+
+
+});
+
+
+
+</script>
+    
+</body>
+</html>
